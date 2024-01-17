@@ -1,0 +1,51 @@
+/* @import url(../dark.css);
+@import url(../light.css); */
+.nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: var(--primary); */
+    /* color: var(--text); */
+    background-color: #44355B;
+    color: whitesmoke;
+    padding:0px 25px;
+}
+.nav>h1{
+    font-family: cursive;
+    font-weight: 400;
+    /* font-style: unset; */
+}
+.nav>section>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+.nav>section>ul>li>a{
+    text-decoration: none;
+    color: whitesmoke;
+    color: var(--text);
+}
+.nav>section>ul>li:nth-child(4)>a{
+    border: 1px solid #EE5622;
+    padding:15px 15px;
+    border-radius: 50px;
+    color: #EE5622;
+}
+
+.nav>section>ul>li>a:hover{
+    color: #EE5622;
+}
+.nav>section>ul>li:nth-child(4)>a:hover{
+    border: 1px solid #EE5622;
+    background-color: #EE5622;
+    color: whitesmoke;
+}
+
+.nav>section>ul>li>button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+}

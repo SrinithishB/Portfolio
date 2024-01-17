@@ -1,0 +1,86 @@
+/* .intro{ */
+    /* background-color: black; */
+    /* color: whitesmoke; */
+/* } */
+.devdesk{
+    margin-top: -10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 15px; */
+    background-color: whitesmoke;
+}
+.devdesk>img{
+    width: 25%;
+}
+.introtext{
+    background-color: #EE5622;
+    height: 50vh;
+    padding:0px 10%;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.techstack{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+.boxcontainer{
+    margin-top: -5%;
+    margin-bottom: 5%;
+    width: fit-content;
+    /* width: 90%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: 0.5px solid #31263E;
+}
+.box{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #31263E;
+    padding: 15px;
+    /* border-radius: 20px; */
+    /* border: 0.5px solid whitesmoke; */
+}
+.box h2,.box h1{
+    color: #EE5622;
+}
+.boxcontainer hr{
+    height: 100%;
+    margin: 15px;
+    color: whitesmoke;
+}
+/* .box h1{
+    color: #ECA72C;
+} */
+
+.boxicon{
+    background-color: #31263E;
+    color: whitesmoke;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+}
+@media screen and (max-width: 900px) {
+    .boxcontainer{
+        flex-direction: column;
+    }
+    .boxcontainer hr{
+        width: 100%;
+        height: inherit;
+    }
+  }
