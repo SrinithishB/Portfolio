@@ -22,6 +22,14 @@ const Nav=(x)=>{
             x.target.innerText='☀️';
         }
     }
+    let openSidebar=()=>{
+        let x=document.getElementById('sidebar');
+        x.style.display='block';
+    }
+    let closeSidebar=()=>{
+        let x=document.getElementById('sidebar');
+        x.style.display='none';
+    }
     return(
         <header className={style.header}>
             <nav className={style.nav}>
@@ -36,8 +44,23 @@ const Nav=(x)=>{
                         <li><Link to="/projects">Projects</Link></li>
                         <li><Link to="/aboutme">About me</Link></li>
                     </ul>
+                    <button onClick={openSidebar}><i className="fa-solid fa-bars"></i></button>
                 </section>
             </nav>
+            <section className={style.sidebar} id='sidebar'>
+                <button onClick={closeSidebar}><i className="fa-solid fa-x"></i></button>
+                <br /><br />
+                <ul>
+                    <li><button onClick={changeMode}>☀️</button></li>
+                    <hr />
+                    <li><Link to="/">Home</Link></li>
+                    <hr />
+                    <li><Link to="/projects">Projects</Link></li>
+                    <hr />
+                    <li><Link to="/aboutme">About me</Link></li>
+                    <hr />
+                </ul>
+            </section>
         </header>
     )
 }

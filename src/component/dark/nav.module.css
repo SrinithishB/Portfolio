@@ -49,3 +49,42 @@
     border: none;
     font-size: 1.5em;
 }
+.nav>section>button{
+    background-color: #44355B;
+    color: whitesmoke;
+    font-size: 1.2em;
+    border: none;
+    display: none;
+}
+.sidebar{
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 70%;
+    height: 100vh;
+    background-color: #221E22;
+    padding: 25px;
+}
+.sidebar ul,.sidebar a{
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.sidebar button{
+    background-color: #221E22;
+    border: none;
+    color: #EE5622;
+    font-size: 1.2em;
+}
+.sidebar hr{
+    margin: 10px 0px;
+}
+@media screen and (max-width: 500px) {
+    .nav>section>button{
+        display: contents;
+    }
+    .nav>section>ul{
+        display: none;
+    }
+}
