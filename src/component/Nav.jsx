@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import dark from './dark/nav.module.css'
 import light from './light/nav.module.css'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Nav=(x)=>{
     let theme=x.theme.theme;
     let setTheme=x.theme.setTheme;
@@ -40,9 +40,12 @@ const Nav=(x)=>{
                         {/* <li><a href="">Home</a></li>
                         <li><a href="">Projects</a></li>
                         <li><a href="">About me</a></li> */}
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/projects">Projects</Link></li>
-                        <li><Link to="/aboutme">About me</Link></li>
+                        <li><NavLink to="/" className={({ isActive }) => 
+                      (isActive ? style.active : style.notactive)}>Home</NavLink></li>
+                        <li><NavLink to="/projects" className={({ isActive }) => 
+                      (isActive ? style.active : style.notactive)}>Projects</NavLink></li>
+                        <li><NavLink to="/aboutme" className={({ isActive }) => 
+                      (isActive ? style.active : style.notactive)}>About me</NavLink></li>
                     </ul>
                     <button onClick={openSidebar}><i className="fa-solid fa-bars"></i></button>
                 </section>
@@ -53,11 +56,14 @@ const Nav=(x)=>{
                 <ul>
                     <li><button onClick={changeMode}>☀️</button></li>
                     <hr />
-                    <li><Link to="/">Home</Link></li>
+                    <li><NavLink to="/" className={({ isActive }) => 
+                      (isActive ? style.active : style.notactive)}>Home</NavLink></li>
                     <hr />
-                    <li><Link to="/projects">Projects</Link></li>
+                    <li><NavLink to="/projects" className={({ isActive }) => 
+                      (isActive ? style.active : style.notactive)}>Projects</NavLink></li>
                     <hr />
-                    <li><Link to="/aboutme">About me</Link></li>
+                    <li><NavLink to="/aboutme" className={({ isActive }) => 
+                      (isActive ? style.active : style.notactive)}>About me</NavLink></li>
                     <hr />
                 </ul>
             </section>

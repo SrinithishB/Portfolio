@@ -21,6 +21,7 @@ const Banner=(x)=>{
                 <br/>
                 <p>Python is my tool, and the web is my canvas. Full Stack Developer creating seamless online experiences.</p>
             </div>
+            <br /><br />
             <div className={style.avatar}>
                 <img src={avatar} alt="Image not found" srcSet="" />
             </div>

@@ -12,8 +12,8 @@
     padding:0px 25px;
 }
 .nav>h1{
-    font-family: cursive;
-    font-weight: 400;
+    /* font-family: cursive; */
+    font-weight: 900;
     /* font-style: unset; */
 }
 .nav>section>ul{
@@ -79,6 +79,12 @@
 }
 .sidebar hr{
     margin: 10px 0px;
+}
+.sidebar .active{
+    color: #EE5622;
+}
+.nav>section>ul>li>.active{
+    color: #EE5622;
 }
 @media screen and (max-width: 500px) {
     .nav>section>button{

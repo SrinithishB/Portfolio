@@ -15,14 +15,15 @@
 }
 .introtext{
     background-color: #EE5622;
-    height: 50vh;
-    padding:0px 10%;
+    min-height: 50vh;
+    padding:15px 10%;
     color: whitesmoke;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+
 }
 
 .techstack{
