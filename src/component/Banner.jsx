@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import avatar from "../image/avatar.png";
+import avatar from "../image/me.png";
 // import style from "./banner.module.css"
 import dark from './dark/banner.module.css'
 import ligth from './light/banner.module.css'

@@ -1,5 +1,5 @@
 .footer{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #221E22;
     /* color: #EE5622; */
     color: whitesmoke;

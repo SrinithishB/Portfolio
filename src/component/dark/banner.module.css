@@ -25,7 +25,13 @@
 .avatar{
     background-color: #EE5622   ;
     border-radius: 100%;
+    overflow: hidden;
+    width:250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .avatar>img{
-    width: 200px;
+    width: 100%;
 }

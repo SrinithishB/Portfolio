@@ -7,6 +7,9 @@
     color: #44355B;
     padding:0px 25px;
 }
+.nav>img{
+    width: 120px;
+}
 .nav>h1{
     /* font-family: cursive; */
     font-weight: 900;

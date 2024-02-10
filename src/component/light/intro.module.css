@@ -58,6 +58,11 @@
 }
 .box h2,.box h1{
     color: #EE5622;
+    line-height: 1.3;
+    /* letter-spacing: 1.5; */
+}
+.box p{
+    line-height: 1.5;
 }
 .boxcontainer hr{
     height: 100%;

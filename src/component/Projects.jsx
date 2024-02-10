@@ -32,6 +32,14 @@ const Projects=(x)=>{
                             <a href="https://n1i2t3h4i5s6h7.pythonanywhere.com/">Visit Website &#8594;</a>
                         </div>                    
                     </div>
+                    <div className={style.box} id={style.blog}>
+                        <div className={style.boxtitle}><h1>GenZblog</h1></div>
+                        <div className={style.hovercontent}>
+                            <h3>I've built a 100% fully functional Django blog with user authentication, CRUD operations for 
+articles, and comment functionality. The site offers a seamless experience. </h3>
+                            <a href="https://genzblog.pythonanywhere.com/">Visit Website &#8594;</a>
+                        </div>                    
+                    </div>
                 </div>
             </div>
         </div>

@@ -14,10 +14,10 @@
     color: #44355B;
 }
 .project_container{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     /* background-color: #221E22; */
-    height: 50vh;
+    height: fit-content;
 }
 .project_container>div{
     margin-top: -5%;
@@ -34,7 +34,7 @@
     height: 300px;
     /* background: linear-gradient(rgba(0, 128, 0, 0.5),rgba(0, 0, 255, 0.5)),url(../../image/kerala.jpg); */
     border-radius: 10px;
-
+    
     color: whitesmoke;
     display: flex;
     align-items: center;
@@ -52,6 +52,12 @@
 }
 #marvel{
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(255, 0, 0, 0.5)),url(../../image/marvel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#blog{
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0, 119, 255, 0.5)),url(../../image/blog.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
