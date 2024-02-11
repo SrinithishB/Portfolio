@@ -13,6 +13,7 @@
 }
 .nav>img{
     width: 120px;
+    content: url(../../image/name.png);
 }
 .nav>h1{
     /* font-family: cursive; */

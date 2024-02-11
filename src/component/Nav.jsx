@@ -2,10 +2,8 @@ import { useState } from 'react'
 import dark from './dark/nav.module.css'
 import light from './light/nav.module.css'
 import { Link, NavLink } from 'react-router-dom';
-import white from '../image/name.png'
-import black from '../image/namedark.png'
+import name from '../image/name.png'
 const Nav=(x)=>{
-  let [name,setName]=useState(white);
     let theme=x.theme.theme;
     let setTheme=x.theme.setTheme;
     function getInitialTheme() {
@@ -18,12 +16,10 @@ const Nav=(x)=>{
         if (theme==="dark"){
             setStyle(light);
             setTheme('light');
-            setName(black)
             x.target.innerText='🌚';
         }else{
             setStyle(dark);
             setTheme('dark');
-            setName(white)
             x.target.innerText='☀️';
         }
     }
