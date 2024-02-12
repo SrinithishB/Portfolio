@@ -11,6 +11,9 @@
 .footer h3{
     color: #EE5622;
 }
+.footer img{
+    width: 150px;
+}
 .social{
     margin-top: 15px;
     display: flex;

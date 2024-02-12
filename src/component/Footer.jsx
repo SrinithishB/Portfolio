@@ -1,10 +1,12 @@
 import style from './dark/footer.module.css'
+import name from '../image/name.png'
 // import ligth from './light/footer.module.css'
 const Footer=()=>{
     return(
         <footer>
             <div className={style.footer}>
-                <h1>Nithish</h1>
+                {/* <h1>Nithish</h1> */}
+                <img src={name} alt="" srcset="" />
                 <h3>Learn and update every day.</h3>
                 <div className={style.social}>
                     <a href="https://github.com/SrinithishB"><i className="fa-brands fa-github"></i></a>
