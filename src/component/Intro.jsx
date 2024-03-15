@@ -7,7 +7,7 @@ const Intro=(x)=>{
     let theme=x.theme.theme;
     let [style,setStyle]=useState(dark);
     useEffect(()=>{
-        if (theme==="dark"){
+        if (theme){
             setStyle(dark);
         }else{
             setStyle(ligth);

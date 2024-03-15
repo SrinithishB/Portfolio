@@ -32,7 +32,7 @@
     color: whitesmoke;
     color: var(--text);
 }
-.nav>section>ul>li:nth-child(4)>a{
+.nav>section>ul>li:nth-child(3)>a{
     border: 1px solid #EE5622;
     padding:15px 15px;
     border-radius: 50px;
@@ -42,7 +42,7 @@
 .nav>section>ul>li>a:hover{
     color: #EE5622;
 }
-.nav>section>ul>li:nth-child(4)>a:hover{
+.nav>section>ul>li:nth-child(3)>a:hover{
     border: 1px solid #EE5622;
     background-color: #EE5622;
     color: whitesmoke;
@@ -66,7 +66,7 @@
     top: 0%;
     right: 0%;
     width: 70%;
-    height: 100vh;
+    height: 100lh;
     background-color: #221E22;
     padding: 25px;
 }

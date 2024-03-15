@@ -8,9 +8,12 @@ import Projects from "./component/Projects";
 import Aboutme from "./component/Aboutme";
 const App=()=>{
     function getInitialTheme() {
+        // return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        //   ? 'dark'
+        //   : 'light';
         return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-          ? 'dark'
-          : 'light';
+          ? true
+          : false;
       }
     let [theme,setTheme]=useState(getInitialTheme);
     return(

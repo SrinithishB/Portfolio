@@ -7,7 +7,7 @@ const Banner=(x)=>{
     let theme=x.theme.theme;
     let [style,setStyle]=useState(dark);
     useEffect(()=>{
-        if (theme==="dark"){
+        if (theme){
             setStyle(dark);
         }else{
             setStyle(ligth);
@@ -23,7 +23,7 @@ const Banner=(x)=>{
             </div>
             <br /><br />
             <div className={style.avatar}>
-                <img src={avatar} alt="Image not found" srcSet="" />
+                <img src={avatar} alt="Not found" srcSet="" />
             </div>
         </div>
     )

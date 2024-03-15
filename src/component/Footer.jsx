@@ -6,7 +6,7 @@ const Footer=()=>{
         <footer>
             <div className={style.footer}>
                 {/* <h1>Nithish</h1> */}
-                <img src={name} alt="" srcset="" />
+                <img src={name} alt="" srcSet="" />
                 <h3>Learn and update every day.</h3>
                 <div className={style.social}>
                     <a href="https://github.com/SrinithishB"><i className="fa-brands fa-github"></i></a>

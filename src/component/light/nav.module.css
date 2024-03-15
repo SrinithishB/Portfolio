@@ -27,7 +27,7 @@
     text-decoration: none;
     color: #44355B;
 }
-.nav>section>ul>li:nth-child(4)>a{
+.nav>section>ul>li:nth-child(3)>a{
     border: 1px solid #EE5622;
     padding:15px 15px;
     border-radius: 50px;
@@ -37,7 +37,7 @@
 .nav>section>ul>li>a:hover{
     color: #EE5622;
 }
-.nav>section>ul>li:nth-child(4)>a:hover{
+.nav>section>ul>li:nth-child(3)>a:hover{
     border: 1px solid #EE5622;
     background-color: #EE5622;
     color: #44355B;

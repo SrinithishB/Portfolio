@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import dark from './dark/nav.module.css'
 import light from './light/nav.module.css'
-import { Link, NavLink } from 'react-router-dom';
+import {NavLink } from 'react-router-dom';
 import name from '../image/name.png'
 const Nav=(x)=>{
     let theme=x.theme.theme;
@@ -13,13 +13,13 @@ const Nav=(x)=>{
       }
     let [style,setStyle]=useState(getInitialTheme);
     let changeMode=(x)=>{
-        if (theme==="dark"){
+        if (theme){
             setStyle(light);
-            setTheme('light');
+            setTheme(false);
             x.target.innerText='🌚';
         }else{
             setStyle(dark);
-            setTheme('dark');
+            setTheme(true);
             x.target.innerText='☀️';
         }
     }
@@ -35,10 +35,11 @@ const Nav=(x)=>{
         <header className={style.header}>
             <nav className={style.nav}>
                 {/* <h1>Nithish</h1> */}
-                <img src={name} alt="" srcset="" />
+                <img src={name} alt="" srcSet="" />
                 <section>
                     <ul>
-                        <li><button onClick={changeMode}>☀️</button></li>
+                    
+                        {/* <li><button onClick={changeMode}>☀️</button></li> */}
                         {/* <li><a href="">Home</a></li>
                         <li><a href="">Projects</a></li>
                         <li><a href="">About me</a></li> */}
@@ -48,15 +49,24 @@ const Nav=(x)=>{
                       (isActive ? style.active : style.notactive)}>Projects</NavLink></li>
                         <li><NavLink to="/aboutme" className={({ isActive }) => 
                       (isActive ? style.active : style.notactive)}>About me</NavLink></li>
+                      <li><label className="switch">
+                      <input type="checkbox" id='checkbox' defaultChecked={theme} onClick={changeMode}/>
+                      <span className="slider round"></span>
+                    </label></li>
                     </ul>
                     <button onClick={openSidebar}><i className="fa-solid fa-bars"></i></button>
                 </section>
             </nav>
             <section className={style.sidebar} id='sidebar'>
+              
                 <button onClick={closeSidebar}><i className="fa-solid fa-x"></i></button>
                 <br /><br />
                 <ul>
-                    <li><button onClick={changeMode}>☀️</button></li>
+                    {/* <li><button onClick={changeMode}>☀️</button></li> */}
+                    <li><label className="switch">
+                      <input type="checkbox" id='checkbox' defaultChecked={theme} onClick={changeMode}/>
+                      <span className="slider round"></span>
+                    </label></li>
                     <hr />
                     <li><NavLink to="/" className={({ isActive }) => 
                       (isActive ? style.active : style.notactive)}>Home</NavLink></li>
